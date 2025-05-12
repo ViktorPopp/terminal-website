@@ -21,4 +21,4 @@ jobs:
         with:
           project: viktorpopp
           entrypoint: jsr:@std/http/file-server
-          root: dist
+          root: .

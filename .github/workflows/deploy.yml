@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,4 +21,4 @@ jobs:
         with:
           project: viktorpopp
           entrypoint: jsr:@std/http/file-server
-          root: .
+          root: dist
